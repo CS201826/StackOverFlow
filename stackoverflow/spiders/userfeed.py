@@ -13,7 +13,7 @@ dir = os.path.dirname(os.path.abspath(__file__))
 class UserfeedSpider(scrapy.Spider):
 	name = "feeds"
 	allowed_domains = ['stackoverflow.com']
-	start_urls = ["https://stackoverflow.com/feeds/user/4925830"]
+	start_urls = ["https://stackoverflow.com/feeds/user/USERID"]
 	itertag = 'item'
 
 	def parse_feed(self, feed):
